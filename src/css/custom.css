@@ -1,0 +1,68 @@
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.theme-code-block-header {
+  padding: 1rem 1.25rem;
+}
+
+.theme-code-block-header > div {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+code.language-yaml {
+  font-family: 'Fira Code', 'Cascadia Code', monospace;
+  font-size: 0.95rem;
+}
+
+.token.atrule,
+.token.builtin,
+.token.important,
+.token.keyword,
+.token.selector {
+  color: #25c2a0;
+  font-weight: bold;
+}
+
+.token.string,
+.token.char,
+.token.attr-value {
+  color: #a5d6ff;
+}
+
+.token.boolean,
+.token.number {
+  color: #ffab70;
+  font-weight: 600;
+}
+
+.token.comment {
+  color: #8b949e;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #ffffff;
+  opacity: 0.7;
+}
