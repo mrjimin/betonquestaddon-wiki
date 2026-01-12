@@ -9,22 +9,39 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-            <Heading as="h1" className="hero__title">
-                {siteConfig.title}
-            </Heading>
-            <p className="hero__subtitle">{siteConfig.tagline}</p>
-            <div>
-                <a href="https://modrinth.com/plugin/betonquestaddon" target="_blank">
-                    <img src="https://img.shields.io/modrinth/v/betonquestaddon?style=for-the-badge&color=adadad" alt="Modrinth Version"/>
-                </a>
+    const {siteConfig} = useDocusaurusContext();
+    return (
+        <header className={clsx('hero hero--primary', styles.heroBanner)}>
+            <div className="container">
+                <Heading as="h1" className="hero__title">
+                    {siteConfig.title}
+                </Heading>
+                <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+                <div className={styles.buttons}>
+                    <Link
+                        className="button button--secondary button--lg"
+                        to="/docs/intro">
+                        Get Started with Documentation
+                    </Link>
+                </div>
+
+                <br />
+                <div>
+                    <div>
+                        <a href="https://modrinth.com/plugin/betonquestaddon" target="_blank">
+                            <img src="https://img.shields.io/modrinth/dt/betonquestaddon?style=for-the-badge&color=adadad" alt="BetonQuestAddon Dowload"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://modrinth.com/plugin/betonquestaddon" target="_blank">
+                            <img src="https://img.shields.io/modrinth/v/betonquestaddon?style=for-the-badge&color=adadad" alt="BetonQuestAddon Version"/>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </header>
-  );
+        </header>
+    );
 }
 
 export default function Home(): ReactNode {
@@ -32,11 +49,11 @@ export default function Home(): ReactNode {
     return (
         <Layout
             title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
+            description="Description will go into a meta tag in <head />">
+            <HomepageHeader />
+            <main>
+                <HomepageFeatures />
+            </main>
+        </Layout>
+    );
 }
