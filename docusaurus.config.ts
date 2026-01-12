@@ -119,11 +119,11 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://github.com/mrjimin/BetonQuestAddon',
+              href: 'https://discord.gg/7xTFeKHxjb',
             },
             {
               label: 'GitHub',
-              href: 'https://discord.gg/7xTFeKHxjb',
+              href: 'https://github.com/mrjimin',
             },
             {
               label: 'bStats',
