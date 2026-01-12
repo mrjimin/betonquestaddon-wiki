@@ -148,11 +148,3 @@ The `<scarecrow_id>` must match the ID defined in your server's configuration fi
 
 Specifically, look for the **`mechanics.scarecrow.id`** section to ensure you are using the correct identifier.
 :::
-
-[//]: # (:::danger)
-
-[//]: # ()
-[//]: # (This objective requires **exact IDs**. Wildcard patterns &#40;e.g., `*`, `?`&#41; are **NOT** supported for scarecrows.)
-
-[//]: # ()
-[//]: # (:::)
