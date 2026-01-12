@@ -15,6 +15,11 @@ English is not my first language. Thanks for understanding!
 - `CustomFishing` integrations
 - `config-version` in `config.yml`
 
+:::danger
+The configuration API has changed.\
+Delete `config.yml` and restart the server to apply the new configuration format.
+:::
+
 ---
 
 ## [0.0.4] - 2026-01-13
