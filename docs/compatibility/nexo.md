@@ -1,6 +1,6 @@
 # Nexo
 
-This page covers the integration with [Nexo](https://polymart.org/product/6901).
+This page covers the compatibility with [Nexo](https://polymart.org/product/6901).
 
 ## Actions
 
@@ -22,7 +22,7 @@ Places specific Nexo furniture at a designated location.
 | _blockFace_ | blockFace:[BlockFace](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/BlockFace.html) | SELF          | The specific face or direction (e.g., NORTH).                       |
 
 ```yaml title="Example"
-action:
+actions:
   setNxBlock: nexoBlockAt ruby_block 0;-60;0;world
   setNxFurniture: nexoFurnitureAt arm_chair 0;-60;0;world rotation:FLIPPED_45 blockFace:SOUTH
 ```

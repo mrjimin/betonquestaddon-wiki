@@ -1,6 +1,6 @@
 # CustomCrops
 
-This page covers the integration with [CustomCrops](https://polymart.org/product/2625).
+This page covers the compatibility with [CustomCrops](https://polymart.org/product/2625).
 
 ## Actions
 
@@ -15,7 +15,7 @@ Changes the season of a designated world to a specific one.
 | _season_  | [Season](https://github.com/Xiao-MoMi/Custom-Crops/blob/86b6ad669e0b00e9cb3c2181a60d32f16de32c91/api/src/main/java/net/momirealms/customcrops/api/core/world/Season.java) | none          | The new season to be applied to the designated world. |
 
 ```yaml title="Example"
-action:
+actions:
   setSeason: customCropsSetSeason SPRING world
 ```
 

@@ -1,6 +1,6 @@
 # ItemsAdder
 
-This page covers the integration with [ItemsAdder](https://www.spigotmc.org/resources/73355/).
+This page covers the compatibility with [ItemsAdder](https://www.spigotmc.org/resources/73355/).
 
 ## Actions
 
@@ -20,7 +20,7 @@ Places specific ItemsAdder furniture at a designated location.
 | _location_ | [Locations](https://betonquest.org/docs/main/locations) | none          | The coordinates where the object will be placed                     |
 
 ```yaml title="Example"
-action:
+actions:
   setIABlock: itemsAdderBlockAt iasurvival:ruby_block 0;-60;0;world
   setIAFurniture: itemsAdderFurnitureAt iaalchemy:chair 0;-60;0;world
 ```

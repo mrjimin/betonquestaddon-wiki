@@ -10,6 +10,13 @@ All notable changes to this project will be documented in this file.
 English is not my first language. Thanks for understanding!
 :::
 
+## [0.0.6] - 2026-01-13
+#### Added
+- `CustomNameplats` integrations
+
+#### Refactoring
+- `Integrations` to `Compatibility`
+
 ## [0.0.5] - 2026-01-13
 #### Added
 - `CustomFishing` integrations

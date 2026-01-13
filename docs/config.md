@@ -12,9 +12,11 @@ To ensure proper integration with **BetonQuestAddon**, you must disable the foll
 ```yaml title="yourServer/plugins/BetonQuest/config.yml"
 # Change this value to false
 hook:
+  # ...
   craftengine: true
   itemsadder: true
   nexo: true
+  # ...
 ```
 :::tip
 **Please set the following options to `false` for the plugins you are using!** This prevents conflicts between the core plugin and BetonQuestAddon.

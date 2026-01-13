@@ -1,6 +1,6 @@
 # CraftEngine
 
-This page covers the integration with [CraftEngine](https://polymart.org/product/7624).
+This page covers the compatibility with [CraftEngine](https://polymart.org/product/7624).
 
 ## Actions
 
@@ -21,7 +21,7 @@ Places specific CraftEngine furniture at a designated location.
 | _playSound_ | playSound:Boolean                                       | false         | Whether to play the placement sound effect when the object is set.  |
 
 ```yaml title="Example"
-action:
+actions:
   setCEBlock: craftEngineBlockAt default:chessboard_block 0;-60;0;world
   setCEFurniture: craftEngineFurnitureAt default:table_lamp 0;-60;0;world playSound:true
 ```
