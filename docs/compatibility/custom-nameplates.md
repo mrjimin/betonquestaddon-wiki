@@ -11,7 +11,7 @@ This page covers the compatibility with [CustomNameplates](https://polymart.org/
 
 Verifies whether the player has permission for a specific nameplate.
 
-**Syntax: `customNameplatesHasNameplate <nameplate> [ignore]**`
+**Syntax: `customNameplatesHasNameplate <nameplate> [ignore]`**
 
 | Parameter   | Syntax         | Default Value | Explanation                                          |
 |-------------|----------------|---------------|------------------------------------------------------|
@@ -33,7 +33,7 @@ conditions:
 
 Verifies whether the player is currently wearing a specific nameplate.
 
-**Syntax: `customNameplatesEquippedNameplate <nameplate>**`
+**Syntax: `customNameplatesEquippedNameplate <nameplate>`**
 
 | Parameter   | Syntax | Default Value | Explanation                                      |
 |-------------|--------|---------------|--------------------------------------------------|
@@ -48,7 +48,7 @@ conditions:
 
 Verifies whether the player has permission for a specific chat bubble.
 
-**Syntax: `customNameplatesHasBubble <bubble> [ignore]**`
+**Syntax: `customNameplatesHasBubble <bubble> [ignore]`**
 
 | Parameter | Syntax         | Default Value | Explanation                                          |
 |-----------|----------------|---------------|------------------------------------------------------|
@@ -70,7 +70,7 @@ conditions:
 
 Verifies whether the player is currently using a specific chat bubble.
 
-**Syntax: `customNameplatesEquippedBubble <bubble>**`
+**Syntax: `customNameplatesEquippedBubble <bubble>`**
 
 | Parameter | Syntax | Default Value | Explanation                                        |
 |-----------|--------|---------------|----------------------------------------------------|
