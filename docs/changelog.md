@@ -1,9 +1,8 @@
 ---
-title: "Changelog"
-sidebar_position: 2
+title: 🔄 Changelog
+id: changelog
 ---
 
-# Changelog & Updates
 All notable changes to this project will be documented in this file.
 
 :::info Notice

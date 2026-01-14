@@ -6,33 +6,42 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'BetonQuestAddon',
-  tagline: 'Extends BetonQuest with additional powerful features.',
+
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    experimental_faster: {
+      rspackBundler: true,
+      rspackPersistentCache: true,
+    },
   },
 
   // Set the production url of your site here
-  url: 'https://betonquestaddon.netlify.app',
+  //
+  // url: 'https://betonquestaddon.netlify.app',
+  url: 'https://mrjimin.net',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'mrjimin', // Usually your GitHub org/user name.
+  projectName: 'betonquestaddon-wiki', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    }
+  },
+
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ko'],
   },
 
   presets: [
@@ -41,11 +50,13 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: '/',
+          editUrl: 'https://github.com/mrjimin/BetonQuestAddon-wiki/edit/master/',
+          editLocalizedFiles: true,
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -55,90 +66,54 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
-    colorMode: {
-      respectPrefersColorScheme: true,
-    },
     navbar: {
       title: 'BetonQuestAddon',
       logo: {
-        alt: 'My Site Logo',
         src: 'img/logo.svg',
+        width: 32,
+        height: 32,
       },
-      items: [
-        {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Docs',
-        },
-        {
-          href: 'https://modrinth.com/plugin/betonquestaddon',
-          label: 'Download',
-          position: 'left',
-        },
-        // {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/mrjimin',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
+
+      // items: [
+      //   {
+      //     type: 'localeDropdown',
+      //     position: 'right',
+      //   },
+      // ],
     },
-    footer: {
-      style: 'dark',
-      links: [
-        // {
-        //   title: 'Docs',
-        //   items: [
-        //     {
-        //       label: 'Tutorial',
-        //       to: '/docs/intro',
-        //     },
-        //   ],
-        // },
-        // {
-        //   title: 'Community',
-        //   items: [
-        //     {
-        //       label: 'Stack Overflow',
-        //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //     },
-        //     {
-        //       label: 'Discord',
-        //       href: 'https://discordapp.com/invite/docusaurus',
-        //     },
-        //     {
-        //       label: 'X',
-        //       href: 'https://x.com/docusaurus',
-        //     },
-        //   ],
-        // },
-        {
-          title: 'Links',
-          items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/7xTFeKHxjb',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/mrjimin',
-            },
-            {
-              label: 'bStats',
-              href: 'https://bstats.org/plugin/bukkit/BetonQuestAddon/26421',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} mrjimin`,
-    },
+
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['java'],
+    },
+    colorMode: {
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
+    zoom: {
+      selector: '.markdown img',
+      background: {
+        light: 'rgba(255,255,255,0.8)',
+        dark: 'rgba(36,36,36,0.8)',
+      },
     },
   } satisfies Preset.ThemeConfig,
+
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        language: ["en", "ko"],
+        searchBarShortcutKeymap: "ctrl+shift+f",
+        docsRouteBasePath: "/",
+      }),
+    ],
+    'docusaurus-plugin-image-zoom',
+  ],
+
 };
 
 export default config;

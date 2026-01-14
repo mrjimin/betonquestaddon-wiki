@@ -1,4 +1,7 @@
-# CraftEngine
+---
+title: 📦 craftEngine
+id: craft-engine
+---
 
 This page covers the compatibility with [CraftEngine](https://polymart.org/product/7624).
 

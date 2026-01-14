@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+title: 📖 Overview
+id: overview
+slug: /
 ---
-
-# Overview
 
 BetonQuestAddon is a comprehensive extension designed to enhance and expand the core functionalities of the [BetonQuest](https://betonquest.org/) plugin, enabling advanced integrations and additional features for server developers.
 
@@ -19,3 +19,9 @@ BetonQuestAddon is a comprehensive extension designed to enhance and expand the 
 | **Sponge / Fabric**             |     ❌     | No Support                    |
 
 > **Technical Note:** BetonQuestAddon is built specifically for the **Paper ecosystem**. It leverages specific APIs available only in Paper and its forks.
+
+---
+
+:::info Reference
+This documentation was developed with reference to [Xiao-MoMi's craft-engine-wiki](https://github.com/Xiao-MoMi/craft-engine-wiki).
+:::

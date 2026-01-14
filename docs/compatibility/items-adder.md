@@ -1,4 +1,7 @@
-# ItemsAdder
+---
+title: 💎 ItemsAdder
+id: items-adder
+---
 
 This page covers the compatibility with [ItemsAdder](https://www.spigotmc.org/resources/73355/).
 

@@ -1,5 +1,6 @@
 ---
-sidebar_position: 3
+title: ⚙️ Configuration
+id: configuration
 ---
 
 # Configuration

@@ -1,4 +1,7 @@
-# Nexo
+---
+title: ☄️ Nexo
+id: nexo
+---
 
 This page covers the compatibility with [Nexo](https://polymart.org/product/6901).
 

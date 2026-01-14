@@ -1,4 +1,7 @@
-# CustomCrops
+---
+title: 🍅 CustomCrops
+id: custom-crops
+---
 
 This page covers the compatibility with [CustomCrops](https://polymart.org/product/2625).
 
