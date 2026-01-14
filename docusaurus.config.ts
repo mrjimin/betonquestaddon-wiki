@@ -51,7 +51,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          editUrl: 'https://github.com/mrjimin/BetonQuestAddon-wiki/edit/master/',
+          editUrl: 'https://github.com/mrjimin/betonquestaddon-wiki/edit/master/',
           editLocalizedFiles: true,
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
