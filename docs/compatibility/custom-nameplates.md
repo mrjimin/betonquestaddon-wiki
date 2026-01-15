@@ -7,6 +7,22 @@ This page covers the compatibility with [CustomNameplates](https://polymart.org/
 
 ## Conditions
 
+## Actions
+
+### Set Nameplate
+Applies a specific CustomNameplate to a designated target.
+
+**Syntax: `customNameplatesApplyNameplate <id>`**
+
+| Parameter | Syntax    | Default Value | Explanation                                                |
+|-----------|-----------|---------------|------------------------------------------------------------|
+| _id_      | nameplate | none          | The unique identifier (ID) of the nameplate to be applied. |
+
+```yaml title="Example"
+actions:
+  applyAngelNameplate: customNameplatesApplyNameplate angel
+```
+
 ### Check Has Nameplate
 
 Verifies whether the player has permission for a specific nameplate.

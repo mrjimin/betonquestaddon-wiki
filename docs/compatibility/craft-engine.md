@@ -1,5 +1,5 @@
 ---
-title: 📦 craftEngine
+title: 📦 CraftEngine
 id: craft-engine
 ---
 

@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file.
 English is not my first language. Thanks for understanding!
 :::
 
+## [0.0.61] - 2026-01-16
+#### Added
+- `customNameplatesApplyNameplate` action
+
 ## [0.0.6] - 2026-01-13
 #### Added
 - `CustomNameplats` compatibility
