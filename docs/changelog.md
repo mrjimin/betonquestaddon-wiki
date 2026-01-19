@@ -9,6 +9,16 @@ All notable changes to this project will be documented in this file.
 English is not my first language. Thanks for understanding!
 :::
 
+## [0.0.62] - 2026-01-19
+#### Added
+- `HMCCosmetics` compatibility
+- `CosmeticsCore` compatibility
+- `Typewriter` compatibility
+
+#### Changed
+- Updated dependencies to the latest versions. (599)
+- change code
+
 ## [0.0.61] - 2026-01-16
 #### Added
 - `customNameplatesApplyNameplate` action

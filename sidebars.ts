@@ -45,8 +45,13 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
+          id: "compatibility/cosmetics-core",
+          label: '💄 CosmeticsCore',
+        },
+        {
+          type: 'doc',
           id: "compatibility/craft-engine",
-          label: '📦 craftEngine',
+          label: '📦 CraftEngine',
         },
         {
           type: 'doc',
@@ -65,6 +70,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: "compatibility/hmc-cosmetics",
+          label: '🧢 HMCCosmetics',
+        },
+        {
+          type: 'doc',
           id: "compatibility/items-adder",
           label: '💎 ItemsAdder',
         },
@@ -72,7 +82,12 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: "compatibility/nexo",
           label: '☄️ Nexo',
-        }
+        },
+        {
+          type: 'doc',
+          id: "compatibility/typewriter",
+          label: '⌨️ Typewriter',
+        },
       ]
     },
 
