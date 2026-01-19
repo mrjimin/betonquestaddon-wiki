@@ -36,6 +36,22 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: '📜 BetonQuest',
+      collapsed: true,
+      link: {
+        type: 'doc',
+        id: "betonquest",
+      },
+      items: [
+        {
+          type: 'doc',
+          id: "betonquest/actions",
+          label: '▶️ Actions',
+        },
+      ]
+    },
+    {
+      type: 'category',
       label: '🤝 Compatibility',
       collapsed: true,
       link: {

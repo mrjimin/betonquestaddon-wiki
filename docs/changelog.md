@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file.
 English is not my first language. Thanks for understanding!
 :::
 
+## [0.0.63] - 2026-01-19
+#### Added
+- `particleCube` action
+
 ## [0.0.62] - 2026-01-19
 #### Added
 - `HMCCosmetics` compatibility
