@@ -96,6 +96,6 @@ items:
   amethystTorch: craftEngine default:amethyst_torch quest-item
 conditions:
   hasTopazAxe: hand topazAxe
-events:
+actions:
   giveAmethystTorch: give amethystTorch:3
 ```

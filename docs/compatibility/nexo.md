@@ -97,6 +97,6 @@ items:
   tableLamp: nexo table_lamp quest-item
 conditions:
   hasForestTrident: hand forestTrident
-events:
+actions:
   giveTableLamp: give tableLamp:3
 ```
