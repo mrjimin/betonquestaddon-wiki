@@ -58,22 +58,24 @@ conditions:
 Triggers when a player interacts with CraftEngine block (Place, Break, or Interact).
 
 **Syntax:**
-- **`craftEngineBlockPlace <id> [amount] [isCancelled]`**
-- **`craftEngineBlockBreak <id> [amount] [isCancelled]`**
-- **`craftEngineBlockInteract <id> [amount] [isCancelled]`**
+- **`craftEngineBlockPlace <id> [amount] [isCancelled] [location] [range]`**
+- **`craftEngineBlockBreak <id> [amount] [isCancelled] [location] [range]`**
+- **`craftEngineBlockInteract <id> [amount] [isCancelled] [location] [range]`**
 
 ### Furniture
 Triggers when a player interacts with CraftEngine furniture (Place, Break, or Interact).
 
 **Syntax:**
-- **`craftEngineFurniturePlace <id> [amount] [isCancelled]`**
-- **`craftEngineFurnitureBreak <id> [amount] [isCancelled]`**
-- **`craftEngineFurnitureInteract <id> [amount] [isCancelled]`**
+- **`craftEngineFurniturePlace <id> [amount] [isCancelled] [location] [range]`**
+- **`craftEngineFurnitureBreak <id> [amount] [isCancelled] [location] [range]`**
+- **`craftEngineFurnitureInteract <id> [amount] [isCancelled] [location] [range]`**
 
-| Parameter     | Syntax              | Default Value | Explanation                                                         |
-|---------------|---------------------|---------------|---------------------------------------------------------------------|
-| _id_          | namespace:id        | none          | The unique identifier (ID) of the block or furniture to be spawned. |
-| _amount_      | amount:Int          | 1             | The number of times the action must be performed.                   |
+| Parameter  | Syntax                                                                                                                | Default Value | Explanation                                                                              |
+|------------|-----------------------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------|
+| _id_       | namespace:id                                                                                                          | none          | The unique identifier (ID) of the block or furniture to be spawned.                      |
+| _amount_   | amount:Int                                                                                                            | 1             | The number of times the action must be performed.                                        |
+| _location_ | location:[Locations](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | everywhere    | The specific location where the block or furniture must be located.                      |
+| _range_    | range:number                                                                                                          | everywhere    | The maximum distance (in blocks) from the `location` within which the action is counted. |
 
 ```yaml title="Example"
 objectives:

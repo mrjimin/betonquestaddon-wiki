@@ -15,14 +15,14 @@ Places a specific Nexo block at a designated location.
 ### Set Furniture
 Places specific Nexo furniture at a designated location.
 
-**Syntax: `nexoFurnitureAt <id> <location> [rotation] [blockFace]`**
+**Syntax: `nexoFurnitureAt <id> <location> [rotation] [blockFace]
 
-| Parameter   | Syntax                                                                                                       | Default Value | Explanation                                                         |
-|-------------|--------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------|
-| _id_        | id                                                                                                           | none          | The unique identifier (ID) of the block or furniture to be spawned. |
-| _location_  | [Locations](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | none          | The coordinates where the object will be placed                     |
-| _rotation_  | rotation:[Rotation](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Rotation.html)                       | NONE          | The rotation angle (e.g., CLOCKWISE).                               |
-| _blockFace_ | blockFace:[BlockFace](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/BlockFace.html)              | SELF          | The specific face or direction (e.g., NORTH).                       |
+| Parameter   | Syntax                                                                                                                | Default Value | Explanation                                                                              |
+|-------------|-----------------------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------|
+| _id_        | id                                                                                                                    | none          | The unique identifier (ID) of the block or furniture to be spawned.                      |
+| _location_  | [Locations](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating)          | none          | The coordinates where the object will be placed                                          |
+| _rotation_  | rotation:[Rotation](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Rotation.html)                                | NONE          | The rotation angle (e.g., CLOCKWISE).                                                    |
+| _blockFace_ | blockFace:[BlockFace](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/BlockFace.html)                       | SELF          | The specific face or direction (e.g., NORTH).                                            |
 
 ```yaml title="Example"
 actions:
@@ -59,22 +59,24 @@ conditions:
 Triggers when a player interacts with Nexo block (Place, Break, or Interact).
 
 **Syntax:**
-- **`nexoBlockPlace <id> [amount] [isCancelled]`**
-- **`nexoBlockBreak <id> [amount] [isCancelled]`**
-- **`nexoBlockInteract <id> [amount] [isCancelled]`**
+- **`nexoBlockPlace <id> [amount] [isCancelled] [location] [range]`**
+- **`nexoBlockBreak <id> [amount] [isCancelled] [location] [range]`**
+- **`nexoBlockInteract <id> [amount] [isCancelled]  [location] [range]`**
 
 ### Furniture
 Triggers when a player interacts with Nexo furniture (Place, Break, or Interact).
 
 **Syntax:**
-- **`nexoFurniturePlace <id> [amount] [isCancelled]`**
-- **`nexoFurnitureBreak <id> [amount] [isCancelled]`**
-- **`nexoFurnitureInteract <id> [amount] [isCancelled]`**
+- **`nexoFurniturePlace <id> [amount] [isCancelled] [location] [range]`**
+- **`nexoFurnitureBreak <id> [amount] [isCancelled] [location] [range]`**
+- **`nexoFurnitureInteract <id> [amount] [isCancelled] [location] [range]`**
 
-| Parameter | Syntax     | Default Value | Explanation                                                         |
-|-----------|------------|---------------|---------------------------------------------------------------------|
-| _id_      | id         | none          | The unique identifier (ID) of the block or furniture to be spawned. |
-| _amount_  | amount:Int | 1             | The number of times the action must be performed.                   |
+| Parameter  | Syntax                                                                                                                | Default Value | Explanation                                                                              |
+|------------|-----------------------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------|
+| _id_       | id                                                                                                                    | none          | The unique identifier (ID) of the block or furniture to be spawned.                      |
+| _amount_   | amount:Int                                                                                                            | 1             | The number of times the action must be performed.                                        |
+| _location_ | location:[Locations](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | everywhere    | The specific location where the block or furniture must be located.                      |
+| _range_    | range:number                                                                                                          | everywhere    | The maximum distance (in blocks) from the `location` within which the action is counted. |
 
 ```yaml title="Example"
 objectives:
