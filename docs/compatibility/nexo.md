@@ -15,7 +15,7 @@ Places a specific Nexo block at a designated location.
 ### Set Furniture
 Places specific Nexo furniture at a designated location.
 
-**Syntax: `nexoFurnitureAt <id> <location> [rotation] [blockFace]
+**Syntax: `nexoFurnitureAt <id> <location> [rotation] [blockFace]`**
 
 | Parameter   | Syntax                                                                                                                | Default Value | Explanation                                                                              |
 |-------------|-----------------------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------|
