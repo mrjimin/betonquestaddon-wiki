@@ -1,6 +1,6 @@
 ---
-title: 🤝 Compatibility
-id: compatibility
+title: 📜 BetonQuest
+id: betonquest
 ---
 
-Documentation for all third-party plugin compatibilities for BetonQuestAddon.
+BetonQuestAddon provides native integration for BetonQuest functionality.
