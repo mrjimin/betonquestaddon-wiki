@@ -41,3 +41,19 @@ If an objective syntax includes the **`isCancelled`** parameter, it allows you t
 Use **`isCancelled:true`** when you want to trigger an objective based on an *attempt* rather than a successful result.  
 **Example:** `block stone amount:1 isCancelled:true`
 :::
+
+---
+
+## Location Objective Troubleshooting `[location]`
+If location verification isn't triggering correctly, it is likely due to the different coordinate systems used for **Blocks** versus **Furniture (Entities)**.
+
+Different target types require specific formats to be detected accurately
+
+| Type                   | Format                                      | Example              |
+|------------------------|---------------------------------------------|----------------------|
+| **Standard Blocks**    | Must use **integers**.                      | `10;64;10;world`     |
+| **Furniture (Entity)** | Requires **`.5` decimals** (center-offset). | `10.5;64;10.5;world` |
+
+[//]: # (:::info[Key Value Guide])
+[//]: # (If you want to avoid precise decimal input, you can use the `range` argument &#40;e.g., `range:0.5`&#41; in your quest instruction to provide a margin of error.)
+[//]: # (:::)

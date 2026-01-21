@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file.
 English is not my first language. Thanks for understanding!
 :::
 
+## [0.0.65] - 2026-01-21
+#### Fixed
+- `[range]` in `CraftEngine`, `ItemsAdder`, `Nexo` objectives
+
 ## [0.0.64] - 2026-01-20
 #### Added
 - `[location]` in `CraftEngine`, `ItemsAdder`, `Nexo` objectives
