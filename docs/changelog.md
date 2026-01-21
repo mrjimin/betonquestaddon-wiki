@@ -9,6 +9,15 @@ All notable changes to this project will be documented in this file.
 English is not my first language. Thanks for understanding!
 :::
 
+## [0.0.67] - 2026-01-21
+#### Added
+- `CustomFishing` item
+#### Changed
+- `Nexo` api version - 1.16 to 1.17
+- `CraftEngine` api version - 0.o.66 to 0.0.67
+#### Optimized
+- `Nexo`, `CraftEngine` item
+
 ## [0.0.66] - 2026-01-21
 #### Added
 - `WorldGuard` compatibility

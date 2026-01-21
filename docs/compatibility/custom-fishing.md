@@ -75,3 +75,19 @@ please refer to the official documentation:
 :::tip
 Totem objectives support wildcards (e.g., *_totem), allowing you to track the activation of various totem types.
 :::
+
+## Items
+
+CustomFishing usage is integrated to the [Items](https://betonquest.org/3.0-DEV/Documentation/Features/Items/) system and thus used for events and conditions.
+
+In addition, you can also add `quest-item` argument to tag them as "QuestItem".
+
+```yaml title="Example" 
+items:
+  catFishSilverStar: customFishing cat_fish_silver_star
+  goldFish: customFishing gold_fish quest-item
+conditions:
+  hasCatFishSilverStar: hand catFishSilverStar
+actions:
+  giveGoldFish: give goldFish:3
+```
