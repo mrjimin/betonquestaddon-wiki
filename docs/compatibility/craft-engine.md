@@ -17,11 +17,11 @@ Places specific CraftEngine furniture at a designated location.
 
 **Syntax: `craftEngineFurnitureAt <id> <location> [playSound]`**
 
-| Parameter   | Syntax                                                                                                       | Default Value | Explanation                                                         |
-|-------------|--------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------|
-| _id_        | namespace:id                                                                                                 | none          | The unique identifier (ID) of the block or furniture to be spawned. |
-| _location_  | [Locations](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | none          | The coordinates where the object will be placed                     |
-| _playSound_ | playSound:Boolean                                                                                            | false         | Whether to play the placement sound effect when the object is set.  |
+| Parameter   | Syntax                                                                                                      | Default Value | Explanation                                                         |
+|-------------|-------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------|
+| _id_        | namespace:id                                                                                                | none          | The unique identifier (ID) of the block or furniture to be spawned. |
+| _location_  | [Location](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | none          | The coordinates where the object will be placed                     |
+| _playSound_ | playSound:Boolean                                                                                           | false         | Whether to play the placement sound effect when the object is set.  |
 
 ```yaml title="Example"
 actions:
@@ -41,10 +41,10 @@ Checks if a specific CraftEngine furniture exists at a designated location.
 
 **Syntax: `craftEngineFurniture <id> <location>`**
 
-| Parameter  | Syntax                                                                                                       | Default Value | Explanation                                                         |
-|------------|--------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------|
-| _id_       | namespace:id                                                                                                 | none          | The unique identifier (ID) of the block or furniture to be spawned. |
-| _location_ | [Locations](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | none          | The coordinates where the object will be placed                     |
+| Parameter  | Syntax                                                                                                      | Default Value | Explanation                                                         |
+|------------|-------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------|
+| _id_       | namespace:id                                                                                                | none          | The unique identifier (ID) of the block or furniture to be spawned. |
+| _location_ | [Location](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | none          | The coordinates where the object will be placed                     |
 
 ```yaml title="Example"
 conditions:
@@ -70,12 +70,12 @@ Triggers when a player interacts with CraftEngine furniture (Place, Break, or In
 - **`craftEngineFurnitureBreak <id> [amount] [isCancelled] [location] [range]`**
 - **`craftEngineFurnitureInteract <id> [amount] [isCancelled] [location] [range]`**
 
-| Parameter  | Syntax                                                                                                                | Default Value | Explanation                                                                              |
-|------------|-----------------------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------|
-| _id_       | namespace:id                                                                                                          | none          | The unique identifier (ID) of the block or furniture to be spawned.                      |
-| _amount_   | amount:Int                                                                                                            | 1             | The number of times the action must be performed.                                        |
-| _location_ | location:[Locations](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | everywhere    | The specific location where the block or furniture must be located.                      |
-| _range_    | range:number                                                                                                          | everywhere    | The maximum distance (in blocks) from the `location` within which the action is counted. |
+| Parameter  | Syntax                                                                                                               | Default Value | Explanation                                                                              |
+|------------|----------------------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------|
+| _id_       | namespace:id                                                                                                         | none          | The unique identifier (ID) of the block or furniture to be spawned.                      |
+| _amount_   | amount:Int                                                                                                           | 1             | The number of times the action must be performed.                                        |
+| _location_ | location:[Location](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | everywhere    | The specific location where the block or furniture must be located.                      |
+| _range_    | range:Double                                                                                                         | 0             | The maximum distance (in blocks) from the `location` within which the action is counted. |
 
 ```yaml title="Example"
 objectives:

@@ -17,10 +17,10 @@ Places specific ItemsAdder furniture at a designated location.
 
 **Syntax: `itemsAdderFurnitureAt <id> <location>`**
 
-| Parameter  | Syntax                                                                                                       | Default Value | Explanation                                                         |
-|------------|--------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------|
-| _id_       | namespace:id                                                                                                 | none          | The unique identifier (ID) of the block or furniture to be spawned. |
-| _location_ | [Locations](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | none          | The coordinates where the object will be placed                     |
+| Parameter  | Syntax                                                                                                      | Default Value | Explanation                                                         |
+|------------|-------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------|
+| _id_       | namespace:id                                                                                                | none          | The unique identifier (ID) of the block or furniture to be spawned. |
+| _location_ | [Location](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | none          | The coordinates where the object will be placed                     |
 
 ```yaml title="Example"
 actions:
@@ -50,10 +50,10 @@ Checks if a specific ItemsAdder furniture exists at a designated location.
 
 **Syntax: `itemsAdderFurniture <id> <location>`**
 
-| Parameter  | Syntax                                                                                                       | Default Value | Explanation                                                         |
-|------------|--------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------|
-| _id_       | namespace:id                                                                                                 | none          | The unique identifier (ID) of the block or furniture to be spawned. |
-| _location_ | [Locations](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | none          | The coordinates where the object will be placed                     |
+| Parameter  | Syntax                                                                                                      | Default Value | Explanation                                                         |
+|------------|-------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------|
+| _id_       | namespace:id                                                                                                | none          | The unique identifier (ID) of the block or furniture to be spawned. |
+| _location_ | [Location](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | none          | The coordinates where the object will be placed                     |
 
 ```yaml title="Example"
 conditions:
@@ -79,12 +79,12 @@ Triggers when a player interacts with ItemsAdder furniture (Place, Break, or Int
 - **`itemsAdderFurnitureBreak <id> [amount] [isCancelled] [location] [range]`**
 - **`itemsAdderFurnitureInteract <id> [amount] [isCancelled] [location] [range]`**
 
-| Parameter  | Syntax                                                                                                                | Default Value | Explanation                                                                              |
-|------------|-----------------------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------|
-| _id_       | namespace:id                                                                                                          | none          | The unique identifier (ID) of the block or furniture to be spawned.                      |
-| _amount_   | amount:Int                                                                                                            | 1             | The number of times the action must be performed.                                        |
-| _location_ | location:[Locations](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | everywhere    | The specific location where the block or furniture must be located.                      |
-| _range_    | range:number                                                                                                          | everywhere    | The maximum distance (in blocks) from the `location` within which the action is counted. |
+| Parameter  | Syntax                                                                                                               | Default Value | Explanation                                                                              |
+|------------|----------------------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------|
+| _id_       | namespace:id                                                                                                         | none          | The unique identifier (ID) of the block or furniture to be spawned.                      |
+| _amount_   | amount:Int                                                                                                           | 1             | The number of times the action must be performed.                                        |
+| _location_ | location:[Location](https://betonquest.org/3.0-DEV/Documentation/Scripting/Data-Formats/#unified-location-formating) | everywhere    | The specific location where the block or furniture must be located.                      |
+| _range_    | range:Double                                                                                                         | 0             | The maximum distance (in blocks) from the `location` within which the action is counted. |
 
 ```yaml title="Example"
 objectives:

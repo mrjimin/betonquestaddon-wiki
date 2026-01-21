@@ -104,6 +104,11 @@ const sidebars: SidebarsConfig = {
           id: "compatibility/typewriter",
           label: '⌨️ Typewriter',
         },
+        {
+          type: 'doc',
+          id: "compatibility/world-guard",
+          label: '🌎 WorldGuard',
+        },
       ]
     },
 

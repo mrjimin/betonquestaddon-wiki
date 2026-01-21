@@ -9,6 +9,18 @@ All notable changes to this project will be documented in this file.
 English is not my first language. Thanks for understanding!
 :::
 
+## [0.0.66] - 2026-01-21
+#### Added
+- `WorldGuard` compatibility
+  - `worldGuardIsOwner` condition
+  - `worldGuardIsMember` condition
+  - `worldGuardHasOwner` condition
+  - `worldGuardHasMember` condition
+#### Optimized
+- Enhanced profile object handling to prevent `ClassCastException`.
+  - Implemented safe casting (`as? Player`) to ensure stability during offline player checks or console executions.
+  - Refined the `Argument<T>` system for faster argument parsing and variable processing.
+
 ## [0.0.65] - 2026-01-21
 #### Fixed
 - `[range]` in `CraftEngine`, `ItemsAdder`, `Nexo` objectives
