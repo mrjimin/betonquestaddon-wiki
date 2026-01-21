@@ -53,6 +53,8 @@ conditions:
 ### Has Flag
 Checks if the specified region has any **Flag** assigned to it.
 
+**Syntax: `worldGuardHasFlag <flag> [world] [region]`**
+
 | Parameter | Syntax      | Default Value   | Explanation                                                                                |
 |-----------|-------------|-----------------|--------------------------------------------------------------------------------------------|
 | _flag_    | flag        | none            | The name of the WorldGuard flag to check for existence (e.g., `pvp`, `entry`, `greeting`). |
