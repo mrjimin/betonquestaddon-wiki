@@ -74,12 +74,12 @@ const config: Config = {
         height: 32,
       },
 
-      // items: [
-      //   {
-      //     type: 'localeDropdown',
-      //     position: 'right',
-      //   },
-      // ],
+      items: [
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+      ],
     },
 
     prism: {

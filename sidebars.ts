@@ -61,6 +61,11 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
+          id: "compatibility/coins-engine",
+          label: '🪙 CoinsEngine',
+        },
+        {
+          type: 'doc',
           id: "compatibility/cosmetics-core",
           label: '💄 CosmeticsCore',
         },
