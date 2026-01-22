@@ -1,6 +1,6 @@
 ---
-title: 🤝 Compatibility
+title: 🤝 호환성
 id: compatibility
 ---
 
-Documentation for all 3rd party plugin compatibilities for BetonQuestAddon.
+BetonQuestAddon에서 지원하는 모든 서드파티 플러그인 호환성에 대한 문서입니다.

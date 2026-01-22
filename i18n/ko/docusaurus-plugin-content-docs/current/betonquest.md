@@ -1,6 +1,6 @@
 ---
-title: 📜 BetonQuest
+title: 📜 베톤퀘스트
 id: betonquest
 ---
 
-BetonQuestAddon provides native integration for BetonQuest functionality.
+BetonQuestAddon은 베톤퀘스트(BetonQuest) 기능을 위한 기본 통합(Native Integration)을 제공합니다.

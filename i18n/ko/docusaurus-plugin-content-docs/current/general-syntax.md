@@ -1,59 +1,55 @@
 ---
-title: ⌨️ General Syntax
+title: ⌨️ 일반 구문
 id: syntax
 ---
 
-# General Syntax
+# 일반 구문 (General Syntax)
 
-This page explains common parameters and formatting rules that apply to multiple Objectives, Events, and Conditions within BetonQuestAddon.
+이 페이지에서는 BetonQuestAddon의 여러 목적(Objectives), 이벤트(Events), 조건(Conditions)에 공통적으로 적용되는 매개변수와 형식 규칙에 대해 설명합니다.
 
-## Document Notation
+## 문서 표기법
 
-Before looking at specific features, please understand how the syntax is written in this documentation:
+세부 기능을 살펴보기 전에, 이 문서에서 구문이 어떻게 표기되는지 확인해 주세요.
 
-| Notation      | Meaning      | Description                                              |
-|:--------------|:-------------|:---------------------------------------------------------|
-| **`<value>`** | **Required** | This parameter must be provided for the feature to work. |
-| **`[value]`** | **Optional** | This parameter has a default value and can be omitted.   |
+| 표기            | 의미     | 설명                               |
+|:--------------|:-------|:---------------------------------|
+| **`<value>`** | **필수** | 기능이 작동하기 위해 반드시 제공해야 하는 매개변수입니다. |
+| **`[value]`** | **선택** | 기본값이 존재하며, 생략할 수 있는 매개변수입니다.     |
 
 ---
 
-## Multiple IDs
-Most **Objective** `id` parameters support multiple entries using a comma-separated list. This allows you to track several different items, blocks, or entities within a single objective.
+## 다중 ID (Multiple IDs)
+대부분의 **목적(Objective)** `id` 매개변수는 쉼표(,)로 구분된 리스트를 통해 여러 항목 입력을 지원합니다. 이를 통해 하나의 목적 내에서 여러 종류의 아이템, 블록 또는 엔티티를 추적할 수 있습니다.
 
-:::tip[Format & Constraints]
-* **Format:** `A,B,C`
-* **Constraint:** IDs must be separated by a **comma (,)** without any **spaces**.
-* **Example:** `stone,dirt,grass_block` (Correct) vs `stone, dirt` (Incorrect)
+:::tip[형식 및 제약 사항]
+* **형식:** `A,B,C`
+* **제약 사항:** ID는 **공백 없이 쉼표(,)**로만 구분해야 합니다.
+* **예시:** `stone,dirt,grass_block` (올바름) vs `stone, dirt` (잘못됨 - 공백 포함)
+  :::
+
+---
+
+## 취소된 액션 (Cancelled Actions)
+목적 구문에 **`isCancelled`** 매개변수가 포함되어 있다면, 다른 플러그인에 의해 차단된 액션(예: WorldGuard 보호 구역에서 블록 파괴 시도)을 추적할 수 있습니다.
+
+| 값                       | 설명                                     |
+|:------------------------|:---------------------------------------|
+| **`isCancelled:false`** | (기본값) 성공적으로 완료된 액션만 추적합니다.             |
+| **`isCancelled:true`**  | 다른 플러그인에 의해 이벤트가 취소/방지되었더라도 액션을 추적합니다. |
+
+:::info[활용 사례]
+성공적인 결과보다는 **시도(attempt)** 자체를 기반으로 목적을 트리거하고 싶을 때 **`isCancelled:true`**를 사용하세요.  
+**예시:** `block stone amount:1 isCancelled:true`
 :::
 
 ---
 
-## Cancelled Actions
-If an objective syntax includes the **`isCancelled`** parameter, it allows you to track actions that were prevented by other plugins (e.g., trying to break a block in a protected WorldGuard region).
+## 위치 목적 문제 해결 `[location]`
+위치 확인이 올바르게 트리거되지 않는다면, **블록(Blocks)**과 **가구(Furniture/Entities)**가 사용하는 좌표계의 차이 때문일 가능성이 높습니다.
 
-| Value                   | Description                                                                    |
-|:------------------------|:-------------------------------------------------------------------------------|
-| **`isCancelled:false`** | (Default) Only tracks actions that were successfully completed.                |
-| **`isCancelled:true`**  | Tracks the action even if the event was cancelled/prevented by another plugin. |
+대상 유형에 따라 정확하게 감지되기 위한 특정 형식이 필요합니다.
 
-:::info[Use Case]
-Use **`isCancelled:true`** when you want to trigger an objective based on an *attempt* rather than a successful result.  
-**Example:** `block stone amount:1 isCancelled:true`
-:::
-
----
-
-## Location Objective Troubleshooting `[location]`
-If location verification isn't triggering correctly, it is likely due to the different coordinate systems used for **Blocks** versus **Furniture (Entities)**.
-
-Different target types require specific formats to be detected accurately
-
-| Type                   | Format                                      | Example              |
-|------------------------|---------------------------------------------|----------------------|
-| **Standard Blocks**    | Must use **integers**.                      | `10;64;10;world`     |
-| **Furniture (Entity)** | Requires **`.5` decimals** (center-offset). | `10.5;64;10.5;world` |
-
-[//]: # (:::info[Key Value Guide])
-[//]: # (If you want to avoid precise decimal input, you can use the `range` argument &#40;e.g., `range:0.5`&#41; in your quest instruction to provide a margin of error.)
-[//]: # (:::)
+| 유형           | 형식                           | 예시                   |
+|--------------|------------------------------|----------------------|
+| **일반 블록**    | **정수(Integer)**를 사용해야 합니다.   | `10;64;10;world`     |
+| **가구 (엔티티)** | **`.5` 소수점**(중앙 오프셋)이 필요합니다. | `10.5;64;10.5;world` |

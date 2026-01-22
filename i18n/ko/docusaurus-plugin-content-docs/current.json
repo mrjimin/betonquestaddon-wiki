@@ -1,0 +1,26 @@
+{
+  "sidebar.tutorialSidebar.doc.📖 Overview": {
+    "message": "📖 개요",
+    "description": "The label of sidebar item 📖 Overview"
+  },
+  "sidebar.tutorialSidebar.doc.⚙️ Configuration": {
+    "message": "⚙️ 설정",
+    "description": "The label of sidebar item ⚙️ Configuration"
+  },
+  "sidebar.tutorialSidebar.doc.⌨️ General Syntax": {
+    "message": "⌨️ 일반 구문",
+    "description": "The label of sidebar item ⌨️ General Syntax"
+  },
+  "sidebar.tutorialSidebar.doc.🔄 Changelog": {
+    "message": "🔄 변경 로그",
+    "description": "The label of sidebar item 🔄 Changelog"
+  },
+  "sidebar.tutorialSidebar.category.📜 BetonQuest": {
+    "message": "📜 베톤퀘스트",
+    "description": "The label of sidebar category 📜 BetonQuest"
+  },
+  "sidebar.tutorialSidebar.category.🤝 Compatibility": {
+    "message": "🤝 호환성",
+    "description": "The label of sidebar category 🤝 Compatibility"
+  }
+}

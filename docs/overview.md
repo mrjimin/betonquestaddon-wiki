@@ -4,7 +4,7 @@ id: overview
 slug: /
 ---
 
-BetonQuestAddon 한글is a comprehensive extension designed to enhance and expand the core functionalities of the [BetonQuest](https://betonquest.org/3.0-DEV/) plugin, enabling advanced integrations and additional features for server developers.
+BetonQuestAddon is a comprehensive extension designed to enhance and expand the core functionalities of the [BetonQuest](https://betonquest.org/3.0-DEV/) plugin, enabling advanced integrations and additional features for server developers.
 
 :::important
 **BetonQuestAddon exclusively supports BetonQuest 3.** It is not compatible with legacy versions (BQ 2.x).
