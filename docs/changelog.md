@@ -9,6 +9,12 @@ All notable changes to this project will be documented in this file.
 English is not my first language. Thanks for understanding!
 :::
 
+## [0.0.7] - 2026-01-23
+#### Added
+- `CoinsEngine` actions and conditions
+#### Fixed
+- Resolved an issue where `CosmeticsCore` compatibility was not being registered correctly
+
 ## [0.0.67] - 2026-01-21
 #### Added
 - `CustomFishing` item
