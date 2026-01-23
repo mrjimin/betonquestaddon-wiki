@@ -3,8 +3,7 @@ title: ⚙️ 설정
 id: configuration
 ---
 
-# 설정 (Configuration)
-이 페이지에서는 [config.yml](https://github.com/mrjimin/BetonQuestAddon/blob/master/src/main/resources/config.yml) 파일의 상세 내용을 다룹니다.
+[config.yml](https://github.com/mrjimin/BetonQuestAddon/blob/master/src/main/resources/config.yml) 파일의 상세 내용을 다룹니다.
 
 :::danger[필수 조치 사항]
 **BetonQuestAddon**과의 원활한 통합을 위해, `plugins/BetonQuest/config.yml` 파일에서 다음 설정들을 반드시 비활성화해야 합니다.

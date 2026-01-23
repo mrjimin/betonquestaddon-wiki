@@ -1,11 +1,9 @@
 ---
-title: ⌨️ 일반 구문
+title: ⌨️ 사용법
 id: syntax
 ---
 
-# 일반 구문 (General Syntax)
-
-이 페이지에서는 BetonQuestAddon의 여러 목적(Objectives), 이벤트(Events), 조건(Conditions)에 공통적으로 적용되는 매개변수와 형식 규칙에 대해 설명합니다.
+BetonQuestAddon의 여러 목적(Objectives), 이벤트(Events), 조건(Conditions)에 공통적으로 적용되는 매개변수와 형식 규칙에 대해 설명합니다.
 
 ## 문서 표기법
 

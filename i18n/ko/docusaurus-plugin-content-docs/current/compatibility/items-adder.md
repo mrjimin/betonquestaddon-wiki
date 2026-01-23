@@ -3,7 +3,7 @@ title: 💎 ItemsAdder
 id: items-adder
 ---
 
-This page covers the compatibility with [ItemsAdder](https://www.spigotmc.org/resources/73355/).
+[ItemsAdder](https://www.spigotmc.org/resources/73355/) 호환성 안내.
 
 ## Actions
 

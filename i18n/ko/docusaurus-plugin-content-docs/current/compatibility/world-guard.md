@@ -3,7 +3,7 @@ title: 🌎 WorldGuard
 id: world-guard
 ---
 
-This page covers the compatibility with [WorldGuard](https://modrinth.com/plugin/worldguard).
+[WorldGuard](https://modrinth.com/plugin/worldguard) 호환성 안내.
 
 ## Conditions
 

@@ -3,7 +3,7 @@ title: 🍅 CustomCrops
 id: custom-crops
 ---
 
-This page covers the compatibility with [CustomCrops](https://polymart.org/product/2625).
+[CustomCrops](https://polymart.org/product/2625) 호환성 안내.
 
 ## Actions
 

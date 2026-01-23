@@ -3,7 +3,7 @@ title: ⌨️ Typewriter
 id: typewriter
 ---
 
-This page covers the compatibility with [Typewriter](https://modrinth.com/plugin/typewriter).
+[Typewriter](https://modrinth.com/plugin/typewriter) 호환성 안내.
 
 ## Actions
 

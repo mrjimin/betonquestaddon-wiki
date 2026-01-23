@@ -3,7 +3,7 @@ title: 🍀 CustomNameplates
 id: custom-nameplates
 ---
 
-This page covers the compatibility with [CustomNameplates](https://polymart.org/product/2543).
+[CustomNameplates](https://polymart.org/product/2543) 호환성 안내.
 
 ## Conditions
 

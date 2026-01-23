@@ -3,21 +3,21 @@ title: 🧢 HMCCosmetics
 id: hmc-cosmetics
 ---
 
-This page covers the compatibility with [HMCCosmetics](https://www.spigotmc.org/resources/100107/).
+[HMCCosmetics](https://www.spigotmc.org/resources/100107/) 호환성 안내.
 
 ## Actions
 
-### Apply Cosmetic
-Applies a specific HMCCosmetics cosmetic to a designated target.
+### 코스메틱 적용 (Apply Cosmetic)
+대상에게 특정 HMCCosmetics 코스메틱 아이템을 장착시킵니다.
 
-**Syntax: `hmcCosmeticsApplyCosmetic <id> [ignore]`**
+**사용법: `hmcCosmeticsApplyCosmetic <id> [ignore]`**
 
-| Parameter | Syntax         | Default Value | Explanation                                                             |
-|-----------|----------------|---------------|-------------------------------------------------------------------------|
-| _id_      | cosmetics      | none          | The unique identifier (ID) of the cosmetic item to be applied.          |
-| _ignore_  | ignore:Boolean | false         | The toggle used to bypass placement restrictions or requirement checks. |
+| 파라미터     | 사용법            | 기본값   | 설명                                     |
+|----------|----------------|-------|----------------------------------------|
+| _id_     | cosmetics      | 없음    | 적용할 코스메틱 아이템의 고유 ID입니다.                |
+| _ignore_ | ignore:Boolean | false | 장착 제한이나 요구 사항 체크를 무시하고 강제로 적용할지 여부입니다. |
 
-```yaml title="Example"
+```yaml title="예시"
 actions:
   applyBeanieCosmetic: hmcCosmeticsApplyCosmetic beanie
   ignoreApplyJetpackCosmetic: hmcCosmeticsApplyCosmetic jetpack ignore:true
@@ -25,12 +25,12 @@ actions:
 
 ## Conditions
 
-### Is In Wardrobe
-Checks if the player is currently browsing or using the wardrobe.
+### 옷장 이용 확인 (Is In Wardrobe)
+플레이어가 현재 옷장을 이용 중인지 확인합니다.
 
-**Syntax: `hmcCosmeticsInWardrobe`**
+**사용법: `hmcCosmeticsInWardrobe`**
 
-```yaml title="Example"
+```yaml title="예시"
 conditions:
   isInWardrobe: hmcCosmeticsInWardrobe
 ```

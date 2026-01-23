@@ -2,6 +2,7 @@
 title: 🎣 CustomFishing
 id: custom-fishing
 ---
+
 This page covers the compatibility with [CustomFishing](https://polymart.org/product/2723).
 
 ## Objectives
