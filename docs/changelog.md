@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file.
 English is not my first language. Thanks for understanding!
 :::
 
+## [0.0.71] - 2026-01-27
+#### Added
+- `UpdateChecker` for [Modrinth](https://modrinth.com/plugin/betonquestaddon)
+
 ## [0.0.7] - 2026-01-23
 #### Added
 - `CoinsEngine` actions and conditions

@@ -5,6 +5,10 @@ id: changelog
 
 이 프로젝트의 모든 주요 변경 사항은 이 파일에 기록됩니다.
 
+## [0.0.71] - 2026-01-27
+#### 추가됨
+- `UpdateChecker` [모드린스](https://modrinth.com/plugin/betonquestaddon)용
+
 ## [0.0.7] - 2026-01-23
 #### 추가됨
 - `CoinsEngine` 액션 및 조건 추가
