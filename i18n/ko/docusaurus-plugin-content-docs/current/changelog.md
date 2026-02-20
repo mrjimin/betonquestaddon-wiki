@@ -5,6 +5,10 @@ id: changelog
 
 이 프로젝트의 모든 주요 변경 사항은 이 파일에 기록됩니다.
 
+## [0.0.8] - 2026-02-21
+#### 수정됨
+- `BetonQuest` 651 이상 지원됨
+
 ## [0.0.71] - 2026-01-27
 #### 추가됨
 - `UpdateChecker` [모드린스](https://modrinth.com/plugin/betonquestaddon)용

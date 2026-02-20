@@ -9,6 +9,11 @@ All notable changes to this project will be documented in this file.
 English is not my first language. Thanks for understanding!
 :::
 
+## [0.0.8] - 2026-02-21
+#### Fixed
+- Support added for `BetonQuest` 651 and above
+
+
 ## [0.0.71] - 2026-01-27
 #### Added
 - `UpdateChecker` for [Modrinth](https://modrinth.com/plugin/betonquestaddon)
