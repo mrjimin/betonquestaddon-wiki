@@ -61,8 +61,8 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: "compatibility/coins-engine",
-          label: '🪙 CoinsEngine',
+          id: "compatibility/excellent-economy",
+          label: '🪙 ExcellentEconomy',
         },
         {
           type: 'doc',
