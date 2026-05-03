@@ -61,11 +61,6 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: "compatibility/excellent-economy",
-          label: '🪙 ExcellentEconomy',
-        },
-        {
-          type: 'doc',
           id: "compatibility/cosmetics-core",
           label: '💄 CosmeticsCore',
         },
@@ -88,6 +83,11 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: "compatibility/custom-nameplates",
           label: '🍀 CustomNameplates',
+        },
+        {
+          type: 'doc',
+          id: "compatibility/excellent-economy",
+          label: '🪙 ExcellentEconomy',
         },
         {
           type: 'doc',
