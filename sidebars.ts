@@ -48,6 +48,11 @@ const sidebars: SidebarsConfig = {
           id: "betonquest/actions",
           label: '▶️ Actions',
         },
+        {
+          type: 'doc',
+          id: "betonquest/objectives",
+          label: '🎯 Objectives',
+        },
       ]
     },
     {
