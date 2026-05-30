@@ -58,8 +58,8 @@ Triggers when a player harvests or plants CustomCrops.
 
 ```yaml title="Example"
 objectives:
-  plantTomato: customCropsCropPlant tomato
-  harvestTomato: customCropsCropHarvest customcrops:tomato_stage_* amount:5
+  plantTomato: customCropsCropPlant id:tomato
+  harvestTomato: customCropsCropHarvest id:customcrops:tomato_stage_* amount:5
 ```
 :::tip 
 Harvest objectives support wildcards (e.g., tomato_stage_*), allowing you to track multiple growth stages at once. 
@@ -74,8 +74,8 @@ Triggers when a player places or breaks CustomCrops pots.
 
 ```yaml title="Example"
 objectives:
-  placePot: customCropsPotPlace default amount:5
-  breakPot: customCropsPotBreak default_* amount:5
+  placePot: customCropsPotPlace id:default amount:5
+  breakPot: customCropsPotBreak id:default_* amount:5
 ```
 :::tip
 Harvest objectives support wildcards (e.g., default_*), allowing you to track multiple growth stages at once.
@@ -98,9 +98,9 @@ Triggers when a player interacts with watering cans, pots, or sprinklers.
 
 ```yaml title="Example"
 objectives:
-  fillCan: customCropsCanFill watering_can_1 amount:3
-  canPot: customCropsCanPot watering_can_2 pots:default amount:5
-  canSprinkler: customCropsCanSprinkler watering_can_* sprinklers:sprinkler_1
+  fillCan: customCropsCanFill id:watering_can_1 amount:3
+  canPot: customCropsCanPot id:watering_can_2 target:default amount:5
+  canSprinkler: customCropsCanSprinkler id:watering_can_* target:sprinklers:sprinkler_1
 ```
 :::tip
 Harvest objectives support wildcards (e.g., watering_can_*), allowing you to track multiple growth stages at once.
@@ -120,8 +120,8 @@ Triggers when a player places or breaks CustomCrops sprinklers.
 
 ```yaml title="Example"
 objectives:
-  placeSprinklers: customCropsSprinklerPlace sprinkler_1
-  breakSprinklers: customCropsSprinklerBreak sprinkler_* amount:2
+  placeSprinklers: customCropsSprinklerPlace id:sprinkler_1
+  breakSprinklers: customCropsSprinklerBreak id:sprinkler_* amount:2
 ```
 :::tip
 Harvest objectives support wildcards (e.g., sprinkler_*), allowing you to track multiple growth stages at once.
@@ -141,8 +141,8 @@ Triggers when a player places or breaks CustomCrops scarecrows.
 
 ```yaml title="Example"
 objectives:
-  placeScarecrow: customCropsScarecrowPlace scarecrow amount:3
-  breakScarecrow: customCropsScarecrowBreak scarecrow amount:1
+  placeScarecrow: customCropsScarecrowPlace id:scarecrow amount:3
+  breakScarecrow: customCropsScarecrowBreak id:scarecrow amount:1
 ```
 :::warning
 **Scarecrow ID Check**

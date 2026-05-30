@@ -21,11 +21,18 @@ Before looking at specific features, please understand how the syntax is written
 ## Multiple IDs
 Most **Objective** `id` parameters support multiple entries using a comma-separated list. This allows you to track several different items, blocks, or entities within a single objective.
 
+:::danger[CRITICAL REQUIREMENT: Explicit `id:` Prefix]
+You **MUST** explicitly write the `id:` prefix before the ID list. Omitting the `id:` prefix will cause the plugin to fail to parse the target list, resulting in a `null` configuration that allows any target to complete the objective.
+
+* **Correct:** `id:stone,dirt,grass_block`
+* **Incorrect:** `stone,dirt,grass_block`
+  :::
+
 :::tip[Format & Constraints]
-* **Format:** `A,B,C`
+* **Format:** `id:A,B,C`
 * **Constraint:** IDs must be separated by a **comma (,)** without any **spaces**.
-* **Example:** `stone,dirt,grass_block` (Correct) vs `stone, dirt` (Incorrect)
-:::
+* **Example:** `id:stone,dirt,grass_block` (Correct) vs `id:stone, dirt` (Incorrect)
+  :::
 
 ---
 
@@ -39,7 +46,7 @@ If an objective syntax includes the **`isCancelled`** parameter, it allows you t
 
 :::info[Use Case]
 Use **`isCancelled:true`** when you want to trigger an objective based on an *attempt* rather than a successful result.  
-**Example:** `block stone amount:1 isCancelled:true`
+**Example:** `customFishingCaughtFish id:stone amount:1 isCancelled:true`
 :::
 
 ---

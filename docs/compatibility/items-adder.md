@@ -88,9 +88,9 @@ Triggers when a player interacts with ItemsAdder furniture (Place, Break, or Int
 
 ```yaml title="Example"
 objectives:
-  placeRubyBlock: itemsAdderBlockPlace iasurvival:ruby_block
-  breakEndTable: itemsAdderFurnitureBreak iaalchemy:chair amount:2
-  useLamp: itemsAdderFurnitureInteract iaalchemy:lamp isCancelled:true
+  placeRubyBlock: itemsAdderBlockPlace id:iasurvival:ruby_block
+  breakEndTable: itemsAdderFurnitureBreak id:iaalchemy:chair amount:2
+  useLamp: itemsAdderFurnitureInteract id:iaalchemy:lamp isCancelled:true
 ```
 
 ## Items

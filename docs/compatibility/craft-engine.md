@@ -79,9 +79,9 @@ Triggers when a player interacts with CraftEngine furniture (Place, Break, or In
 
 ```yaml title="Example"
 objectives:
-  placeSafe: craftEngineBlockPlace default:safe_block
-  breakFlowerBasket: craftEngineFurnitureBreak default:flower_basket amount:4 isCancelled:true
-  useLamp: craftEngineBlockInteract default:table_lamp amount:3
+  placeSafe: craftEngineBlockPlace id:default:safe_block
+  breakFlowerBasket: craftEngineFurnitureBreak id:default:flower_basket amount:4 isCancelled:true
+  useLamp: craftEngineBlockInteract id:default:table_lamp amount:3
 ```
 
 ## Items

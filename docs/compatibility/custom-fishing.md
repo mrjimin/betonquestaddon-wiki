@@ -19,9 +19,9 @@ Tracks when a player catches a specific fish or a set of fish.
 
 ```yaml title="Example"
 objectives:
-  catchCarp: customFishingCaughtFish tuna_fish_golden_star
-  catchRareFish: customFishingCaughtFish tuna_fish,pike_fish amount:5
-  catchGoldenStartFish: customFishingCaughtFish *_golden_star amount:7
+  catchCarp: customFishingCaughtFish id:tuna_fish_golden_star
+  catchRareFish: customFishingCaughtFish id:tuna_fish,pike_fish amount:5
+  catchGoldenStartFish: customFishingCaughtFish id:*_golden_star amount:7
 ```
 :::tip
 Harvest objectives support wildcards (e.g., *_golden_star), allowing you to track multiple fish types or rarities at once
@@ -39,9 +39,9 @@ Tracks when a player catches any fish belonging to a specific group.
 
 ```yaml title="Example"
 objectives:
-  catchOceanGroup: customFishingCaughtGroup ocean amount:10
-  catchSpecialGroups: customFishingCaughtGroup no_star,pound amount:3
-  catchStarAndOceanGroup: customFishingCaughtGroup *_star,*_ocean
+  catchOceanGroup: customFishingCaughtGroup id:ocean amount:10
+  catchSpecialGroups: customFishingCaughtGroup id:no_star,pound amount:3
+  catchStarAndOceanGroup: customFishingCaughtGroup id:*_star,*_ocean
 ```
 :::tip
 Harvest objectives support wildcards (e.g., *_star), allowing you to track multiple groups simultaneously.
@@ -59,8 +59,8 @@ Tracks when a player activates a specific fishing totem.
 
 ```yaml title="Example"
 objectives:
-  activateDoubleTotem: customFishingActivateTotem double_loot_totem
-  activateAllTotem: customFishingActivateTotem *_totem amount:2
+  activateDoubleTotem: customFishingActivateTotem id:double_loot_totem
+  activateAllTotem: customFishingActivateTotem id:*_totem amount:2
 ```
 :::warning Totem ID Check
 `<totem_id>` must exactly match an ID defined in your totem configuration files.

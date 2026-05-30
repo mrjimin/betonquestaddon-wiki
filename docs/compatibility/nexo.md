@@ -80,9 +80,9 @@ Triggers when a player interacts with Nexo furniture (Place, Break, or Interact)
 
 ```yaml title="Example"
 objectives:
-  placeRubyBlock: nexoBlockPlace ruby_block amount:5
-  breakEndTable: nexoFurnitureBreak end_table amount:2
-  useLamp: nexoFurnitureInteract table_lamp isCancelled:true
+  placeRubyBlock: nexoBlockPlace id:ruby_block amount:5
+  breakEndTable: nexoFurnitureBreak id:end_table amount:2
+  useLamp: nexoFurnitureInteract id:table_lamp isCancelled:true
 ```
 
 ## Items
