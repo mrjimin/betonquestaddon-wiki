@@ -17,7 +17,7 @@ items:
   stone: simple stone_brick_slab
 
 objectives:
-  testCutting: stoneCutting item:stone amount:2
+  testCutting: stoneCutting stone amount:2
 ```
 
 :::important
