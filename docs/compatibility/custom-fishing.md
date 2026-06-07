@@ -10,12 +10,14 @@ This page covers the compatibility with [CustomFishing](https://polymart.org/pro
 ### Fishing
 Tracks when a player catches a specific fish or a set of fish.
 
-**Syntax: `customFishingCaughtFish <fish_id> [amount]`**
+**Syntax: `customFishingCaughtFish <fish_id> [amount] [location] [range]`**
 
-| Parameter | Syntax     | Default Value | Explanation                                            |
-|-----------|------------|---------------|--------------------------------------------------------|
-| _fish_id_ | id         | none          | The unique identifier of the fish.                     |
-| _amount_  | amount:Int | 1             | The number of fish required to complete the objective. |
+| Parameter  | Syntax                                                                                                                | Default Value | Explanation                                                                |
+|------------|-----------------------------------------------------------------------------------------------------------------------|---------------|----------------------------------------------------------------------------|
+| _fish_id_  | id                                                                                                                    | none          | The unique identifier of the fish.                                         |
+| _amount_   | amount:Int                                                                                                            | 1             | The number of fish required to complete the objective.                     |
+| _location_ | location:[Location](https://betonquest.org/3.0-DEV/Documentation/Reference/Data-Formats/#unified-location-formating)	 | Everywhere	   | The location at which the item must be caught. Range must also be defined. |
+| _range_    | range:Double                                                                                                          | Everywhere    | The range around the `location(hook)`.                                     |
 
 ```yaml title="Example"
 objectives:
@@ -40,7 +42,7 @@ Tracks when a player catches any fish belonging to a specific group.
 ```yaml title="Example"
 objectives:
   catchOceanGroup: customFishingCaughtGroup id:ocean amount:10
-  catchSpecialGroups: customFishingCaughtGroup id:no_star,pound amount:3
+  catchSpecialGroups: customFishingCaughtGroup id:no_star,pound amount:3 location:123;456;789;fishWorld range:10
   catchStarAndOceanGroup: customFishingCaughtGroup id:*_star,*_ocean
 ```
 :::tip
