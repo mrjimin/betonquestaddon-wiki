@@ -22,7 +22,7 @@ Tracks when a player catches a specific fish or a set of fish.
 ```yaml title="Example"
 objectives:
   catchCarp: customFishingCaughtFish tuna_fish_golden_star
-  catchRareFish: customFishingCaughtFish tuna_fish,pike_fish amount:5
+  catchRareFish: customFishingCaughtFish tuna_fish,pike_fish amount:5 location:123;456;789;fishWorld range:10
   catchGoldenStartFish: customFishingCaughtFish *_golden_star amount:7
 ```
 :::tip
@@ -32,12 +32,14 @@ Harvest objectives support wildcards (e.g., *_golden_star), allowing you to trac
 ### Fishing Groups
 Tracks when a player catches any fish belonging to a specific group.
 
-**Syntax: `customFishingCaughtGroup <group_id> [amount]`**
+**Syntax: `customFishingCaughtGroup <group_id> [amount] [location] [range]`**
 
-| Parameter  | Syntax     | Default Value | Explanation                                  |
-|------------|------------|---------------|----------------------------------------------|
-| _group_id_ | id         | none          | The unique identifier of the fish group.     |
-| _amount_   | amount:Int | 1             | The number of fish from this group required. |
+| Parameter  | Syntax                                                                                                                | Default Value | Explanation                                                                |
+|------------|-----------------------------------------------------------------------------------------------------------------------|---------------|----------------------------------------------------------------------------|
+| _group_id_ | id                                                                                                                    | none          | The unique identifier of the fish group.                                   |
+| _amount_   | amount:Int                                                                                                            | 1             | The number of fish from this group required.                               |
+| _location_ | location:[Location](https://betonquest.org/3.0-DEV/Documentation/Reference/Data-Formats/#unified-location-formating)	 | Everywhere	   | The location at which the item must be caught. Range must also be defined. |
+| _range_    | range:Double                                                                                                          | Everywhere    | The range around the `location(hook)`.                                     |
 
 ```yaml title="Example"
 objectives:
