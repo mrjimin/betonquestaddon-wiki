@@ -19,9 +19,9 @@ Tracks when a player catches a specific fish or a set of fish.
 
 ```yaml title="Example"
 objectives:
-  catchCarp: customFishingCaughtFish id:tuna_fish_golden_star
-  catchRareFish: customFishingCaughtFish id:tuna_fish,pike_fish amount:5
-  catchGoldenStartFish: customFishingCaughtFish id:*_golden_star amount:7
+  catchCarp: customFishingCaughtFish tuna_fish_golden_star
+  catchRareFish: customFishingCaughtFish tuna_fish,pike_fish amount:5
+  catchGoldenStartFish: customFishingCaughtFish *_golden_star amount:7
 ```
 :::tip
 Harvest objectives support wildcards (e.g., *_golden_star), allowing you to track multiple fish types or rarities at once
