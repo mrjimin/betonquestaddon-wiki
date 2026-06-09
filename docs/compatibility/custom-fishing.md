@@ -43,9 +43,9 @@ Tracks when a player catches any fish belonging to a specific group.
 
 ```yaml title="Example"
 objectives:
-  catchOceanGroup: customFishingCaughtGroup id:ocean amount:10
-  catchSpecialGroups: customFishingCaughtGroup id:no_star,pound amount:3 location:123;456;789;fishWorld range:10
-  catchStarAndOceanGroup: customFishingCaughtGroup id:*_star,*_ocean
+  catchOceanGroup: customFishingCaughtGroup ocean amount:10
+  catchSpecialGroups: customFishingCaughtGroup no_star,pound amount:3 location:123;456;789;fishWorld range:10
+  catchStarAndOceanGroup: customFishingCaughtGroup *_star,*_ocean
 ```
 :::tip
 Harvest objectives support wildcards (e.g., *_star), allowing you to track multiple groups simultaneously.
@@ -54,17 +54,19 @@ Harvest objectives support wildcards (e.g., *_star), allowing you to track multi
 ### Activate Totem
 Tracks when a player activates a specific fishing totem.
 
-**Syntax: `customFishingActivateTotem <totem_id> [amount]`**
+**Syntax: `customFishingActivateTotem <totem_id> [amount] [location] [range]`**
 
-| Parameter  | Syntax     | Default Value | Explanation                              |
-|------------|------------|---------------|------------------------------------------|
-| _totem_id_ | id         | none          | The unique identifier of the fish.       |
-| _amount_   | amount:Int | 1             | The number of crops to harvest or plant. |
+| Parameter  | Syntax                                                                                                                | Default Value | Explanation                                                        |
+|------------|-----------------------------------------------------------------------------------------------------------------------|---------------|--------------------------------------------------------------------|
+| _totem_id_ | id                                                                                                                    | none          | The unique identifier of the fish.                                 |
+| _amount_   | amount:Int                                                                                                            | 1             | The number of crops to harvest or plant.                           |
+| _location_ | location:[Location](https://betonquest.org/3.0-DEV/Documentation/Reference/Data-Formats/#unified-location-formating)	 | Everywhere	   | The item must be caught at the center of the totem (coreLocation). |
+| _range_    | range:Double                                                                                                          | Everywhere    | The range around the `location(hook)`.                             |
 
 ```yaml title="Example"
 objectives:
-  activateDoubleTotem: customFishingActivateTotem id:double_loot_totem
-  activateAllTotem: customFishingActivateTotem id:*_totem amount:2
+  activateDoubleTotem: customFishingActivateTotem double_loot_totem
+  activateAllTotem: customFishingActivateTotem *_totem amount:2
 ```
 :::warning Totem ID Check
 `<totem_id>` must exactly match an ID defined in your totem configuration files.

@@ -50,6 +50,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: "betonquest/conversation",
+          label: '💬 Conversation',
+        },
+        {
+          type: 'doc',
           id: "betonquest/objectives",
           label: '🎯 Objectives',
         },

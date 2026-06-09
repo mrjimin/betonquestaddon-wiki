@@ -9,6 +9,24 @@ All notable changes to this project will be documented in this file.
 English is not my first language. Thanks for understanding!
 :::
 
+## [1.4.0 - beta] - 2026-06-09
+
+#### Added
+- Commands: `reload`, `info`
+- Dialog IO system
+
+#### Optimized
+- Code optimization and refactoring
+- Improved internal structure and performance
+
+#### Fixed
+- Minor bugs and edge-case handling
+
+:::warning Important
+Please **delete your `config.yml`** after updating!  
+The plugin will automatically regenerate it with default settings.
+:::
+
 ## [0.0.8] - 2026-02-21
 #### Fixed
 - Support added for `BetonQuest` 651 and above
