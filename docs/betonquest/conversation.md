@@ -50,7 +50,7 @@ conversation:
 * Fully customizable NPC conversations
 * Layout-based dialog system (`NPC_TITLE`, `FULL_BODY`)
 * ESC key support for closing dialogs
-* Lightweight configuration via `config.yml`
+* Lightweight configuration via `config.yml(conversation.default_io)`
 
 ---
 

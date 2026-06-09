@@ -16,12 +16,12 @@ Default access is restricted to OP players.
 
 ## Command Overview
 
-| Command | Description |
-|--------|-------------|
-| `/betonquestaddon reload` | Reload plugin configuration |
-| `/betonquestaddon info` | Display plugin and server information |
-| `/bqa reload` | Alias for reload |
-| `/bqa info` | Alias for info |
+| Command                   | Description                           |
+|---------------------------|---------------------------------------|
+| `/betonquestaddon reload` | Reload plugin configuration           |
+| `/betonquestaddon info`   | Display plugin and server information |
+| `/bqa reload`             | Alias for reload                      |
+| `/bqa info`               | Alias for info                        |
 
 ---
 
