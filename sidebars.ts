@@ -35,6 +35,11 @@ const sidebars: SidebarsConfig = {
       label: '🔄 Changelog',
     },
     {
+      type: 'doc',
+      id: 'commands',
+      label: '🛠 Commands',
+    },
+    {
       type: 'category',
       label: '📜 BetonQuest',
       collapsed: true,

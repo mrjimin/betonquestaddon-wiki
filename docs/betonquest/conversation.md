@@ -28,10 +28,10 @@ conversation:
 
 ### Layout Types
 
-| Type        | Description                             |                                                  |
-|-------------|-----------------------------------------|--------------------------------------------------|
-| `NPC_TITLE` | Minimal dialog showing only NPC name    | ![NPC\_TITLE example](/static/img/npc_title.png) |
-| `FULL_BODY` | Full dialog with images and extended UI | ![FULL\_BODY example](/static/img/full_body.png) |
+| Type        | Description                             |                                               |
+|-------------|-----------------------------------------|-----------------------------------------------|
+| `NPC_TITLE` | Minimal dialog showing only NPC name    | ![NPC\_TITLE example](/img/bqa/npc_title.png) |
+| `FULL_BODY` | Full dialog with images and extended UI | ![FULL\_BODY example](/img/bqa/full_body.png) |
 
 ---
 
