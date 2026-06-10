@@ -9,6 +9,11 @@ All notable changes to this project will be documented in this file.
 English is not my first language. Thanks for understanding!
 :::
 
+## [1.4.1] - 2026-06-10
+
+#### Added
+- Dialog IO system `button-render-padding`, `default-button-width`(auto) setting
+
 ## [1.4.0 - beta] - 2026-06-09
 
 #### Added
