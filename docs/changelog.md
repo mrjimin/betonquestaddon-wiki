@@ -9,6 +9,12 @@ All notable changes to this project will be documented in this file.
 English is not my first language. Thanks for understanding!
 :::
 
+## [1.4.2] - 2026-06-19
+
+#### Change
+- Kotlin version -> 2.4.0
+- dialog -> bqa_dialog
+
 ## [1.4.1] - 2026-06-10
 
 #### Added
